@@ -136,7 +136,7 @@ const handleClick = () =>{
                 <Container maxWidth="xl">
                         <Grid container flexDirection='row' justifyContent='space-between' p={1}  lg={12} md={12} display={{xs:'none',sm:'none',md:'flex',lg:'flex'}}>
                         <Grid item>
-                        <img src={logo} alt='' width='250px' height='50px' />
+                        <img src={logo} alt='' width='270px' height='50px' />
                         </Grid>
                         <Grid item display='flex' flexDirection='row'>
                             <Grid item>
@@ -167,7 +167,7 @@ const handleClick = () =>{
                             </Grid>
                         </Grid>
                         </Grid> 
-                    <Grid container justifyContent='space-between' display={{xs:'flex',sm:'flex',md:'none',lg:'none'}}>
+                    <Grid container justifyContent='space-between' p={1} display={{xs:'flex',sm:'flex',md:'none',lg:'none'}}>
                     <Grid item>
                         <img src={logo} alt='' />
                     </Grid>
@@ -181,6 +181,7 @@ const handleClick = () =>{
                     </Grid>
                     </Grid>
                     {open &&
+                        <Grid container flexDirection='column' display={{xs:'flex',sm:'flex',md:'none',lg:'none'}}>
                         <Box sx={{backgroundColor:'3e2723',height:'200px'}}>
                         <Divider style={{border:'0.5px solid gray',width:'100%'}}/>
                         <Grid container display='flex' justifyContent='flex-start' flexDirection='column' mt={3}>
@@ -208,6 +209,7 @@ const handleClick = () =>{
                             </Search>
                             </Grid>
                             </Box>
+                            </Grid>
                             }
                 </Container>
             </AppBar>
